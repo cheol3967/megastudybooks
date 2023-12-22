@@ -1,0 +1,730 @@
+@charset "utf-8";
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+ul{
+  list-style: none;
+  
+}
+
+/* --------------------------------------공통끝---------------------------------------------------- */
+
+/* --------------------------------------헤더 사작-------------------------------------------------- */
+
+#fixed1{
+  width: 100%;   
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  background-color: white;
+}
+.search{
+  display: flex;
+  width: 1500px;
+  margin: 10px auto;
+  justify-content: right;
+ 
+}
+
+
+.underbar{
+  border-bottom: 1px solid #66666630;
+}
+
+.header .search div input{
+  width: 224px;
+  height: 36px;
+  border-radius: 40px;
+  border: 1px solid #33333330;
+  padding-left: 20px;
+  font-size: 16px;
+  padding: 9px 16px;
+}
+.header .search div input:focus {
+   outline: 0; 
+}
+.header .search div:nth-child(2) figure{
+  width: 36px;
+  height: 36px;
+  background-color: #0082ff;
+  border-radius: 100%;
+  margin-left: 4px;
+  position: relative;
+}
+.header .search div:nth-child(2) figure img{
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(60%,65%);
+}
+.header .search div:nth-child(3) figure{
+  margin-top: 5px;
+  margin-left: 20px;
+}
+.header .menu{
+  width: 1500px;
+  height: 70px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* 왜 이거 안먹히지? zzzzzz justify-items 하고 안된다고함*/
+  padding: 5px;
+  
+}
+.header .menu .center{
+  width: 351px;
+  height: 68px;
+ 
+}
+.header .menu .center ul{
+  display: flex;
+  justify-content: space-between;
+  line-height: 68px;
+  
+}
+.header .menu .center ul li{
+  font-size: 18px;
+  font-weight: bold;
+
+}
+.header .menu .menubar figure{
+  width: 26px;
+  height: 24px;
+  margin-bottom: 3px;
+}
+.header .menu .menubar figure img{
+  width: 100%;
+  height: 100%;
+}
+/* --------------------------------------헤더 끝----------- -------------------------------------- */
+/* --------------------------------------box1 컨테이너 시작 -------------------------------------- */
+
+.box1{
+ 
+  margin: 0 auto;
+  margin-top: 130px;
+}
+
+.box1 .box1_swiper {
+  width: 100%;
+  position: relative;
+}
+.box1 .box1_swiper .swiper-wrapper{
+  width: 100%;
+  
+}
+.box1 .box1_swiper .swiper-wrapper .swiper-slide{
+  width: 1500px;
+  width: 80%;
+  height: 480px;
+}
+.box1_swiper .swiper-wrapper .swiper-slide a{
+  height: 100%;
+}
+.box1_swiper .swiper-slide a figure{
+  height: 100%;
+  border-radius: 60px;
+  overflow: hidden;
+}
+.box1_swiper .swiper-slide figure img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.box1 .swiper-button-next:after{
+  display: none;
+}
+.box1 .swiper-button-prev:after{
+  display: none;
+}
+.box1 .swiper-button-prev{
+  position: absolute;
+  width: 50px ;
+  height: 50px ;
+  left: 160px ;
+  top: 50%;
+  box-shadow:  -2px -2px 0px #00000010;
+  background: url("../img/swiper-button.svg")  center center / 40% no-repeat;
+  transform: rotate(180deg);
+  background-color: white;
+  border-radius: 100%;
+}
+.box1 .swiper-button-next{
+  position: absolute;
+  width: 50px ;
+  height: 50px ;
+  right: 160px ;
+  top: 50%;
+  background: url("../img/swiper-button.svg")  center center / 40% no-repeat;
+  box-shadow:  2px 2px 0px #00000010;
+  
+  background-color: white;
+  border-radius: 100%;
+}
+.swiper-pagination{
+  bottom: 20px;
+  left: auto;
+  right: 12%;
+ width: auto;
+  background-color: #00000060;
+  color: white;
+  padding: 2px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  
+}
+/* --------------------------------------box1 컨테이너 끝 -------------------------------------- */
+/* --------------------------------------quick menu 퀵메뉴 시작--------------------------------- */
+.quick-menu{
+  width: 1300px;
+  margin: 60px auto;
+}
+.quick-menu ul{
+  display: flex;
+  justify-content: space-between;
+}
+.quick-menu ul a{
+  width: 150px;
+  height: 150px;
+  text-align: center;
+}
+.quick-menu ul a p{
+  font-size: 18px;
+  font-weight: bold;
+}
+/* --------------------------------------quick menu 퀵메뉴 끝----------------------------------- */
+
+/* --------------------------------------box 2 start------------------------------------------- */
+.box2{
+  width: 1500px;
+  margin: 160px auto;
+}
+.box2 h2{
+  margin-top: 70px;
+  font-size: 40px;
+}
+.box2 ul{
+  display: flex;
+  margin: 32px 0 ;
+}
+.box2 ul li:nth-child(1){
+  background-color: black;
+  color: white;
+}
+.box2 ul li{
+  font-size: 18px;
+  color:#111111;
+  padding: 15px 30px;
+  border-radius: 36px;
+  border: 1px solid #33333330;
+  margin-right:20px ;
+}
+.box2_swiper{
+  height: 500px;
+}
+.box2_swiper .swiper-wrapper{
+  width: 1500px;
+  height: 500px;
+}
+.box2_swiper .swiper-wrapper .swiper-slide{
+ 
+  width: 345px;
+  height: 450px;
+  
+}
+.box2_swiper .swiper-wrapper .swiper-slide a{ 
+  width: 100%;
+  height: 100%;
+  display: block;
+  
+}
+.box2_swiper .swiper-wrapper .swiper-slide:hover a .swiper2_background p{
+  display: block;
+
+}
+.box2_swiper .swiper-wrapper .swiper-slide:hover a .swiper2_background::before{
+  opacity: 1;
+}
+.box2_swiper .swiper-wrapper .swiper-slide a .swiper2_background {
+  width: 345px;
+  height: 400px;
+  padding: 51.75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f8fd;
+  border-radius:20px;
+  position: relative;
+}
+.box2_swiper .swiper-wrapper .swiper-slide a .swiper2_background p{
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0% ,-50%);
+  width: 100%;
+  text-align: center;
+  padding: 40px;
+  z-index: 3;
+  color: white;
+  display: none;
+  
+}
+.box2_swiper .swiper-wrapper .swiper-slide a .swiper2_background::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000060;
+  opacity: 0;
+  border-radius: 30px;
+  transition: all 1s;
+}
+.box2_swiper .swiper-wrapper .swiper-slide a .swiper2_background figure{
+  width: 180px;
+  height: 240px;
+}
+.box2_swiper .swiper-wrapper .swiper-slide a .swiper2_background figure img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.box2_swiper .swiper-wrapper .swiper-slide a p{
+  padding: 20px 0;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing : -1.8px;
+}
+.box2_swiper .swiper-button-next{
+  right: 0;
+  top: auto;
+  bottom: 0px;
+  color: black;
+  background: url('../img/swiper-button.svg') center center / 160%  no-repeat;
+}
+
+.box2_swiper .swiper-button-prev{
+  left: auto;
+  right: 60px;
+  top: auto;
+  bottom: 0px;
+  color: black;
+  background: url('../img/swiper-button.svg') center center / 160%  no-repeat;
+  transform: rotate(180deg);
+}
+.box2 .swiper-horizontal>.swiper-pagination-progressbar{
+ width: 1400px;
+ top: auto;
+ bottom: 20px;
+}
+.box2 .swiper-button-next:after{
+  display: none;
+}
+.box2 .swiper-button-prev:after{
+  display: none;
+}
+.box2 .swiper-pagination{
+  height: 1px;
+}
+  
+.box2 .swiper-pagination-progressbar .swiper-pagination-progressbar-fill{
+  background-color: black;
+}
+
+/* ----------------------------------------------box 2 end---------------------------------------------- */
+/* --------------------------------------------- 중간배너 --------------------------------------------- */
+.main .vanner {
+  width: 1440px;
+  margin: 100px auto;
+ 
+} 
+.main .vanner figure{
+  width: 100%;
+}
+.main .vanner figure img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* --------------------------------------------- 중간배너 끝 --------------------------------------------- */
+/* ----------------------------------------------box 3 start---------------------------------------------- */
+.box3{
+  width: 1500px;
+  margin: 0 auto;
+}
+.box3_title{
+  display: flex;
+  align-items: center;
+}
+.box3_title p{
+  font-size: 40px;
+  padding: 0 50px 50px 0;
+}
+.box3_title ul{
+  display: flex;
+  padding-bottom: 20px;
+
+}
+.box3_title ul li{
+  margin-right: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.box3_swiper .swiper-slide{
+  text-align: center;
+  
+}
+.box3_swiper .swiper-slide a figure{
+  width: 280px;
+  height: 390px;
+  
+  margin: 0 auto;
+  margin-bottom: 34px;
+}
+.box3_swiper .swiper-slide a figure img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.box3_swiper .swiper-slide a h3{
+  font-size: 28px;
+  padding-bottom: 10px;
+  letter-spacing : -2.4px;
+
+}
+.box3 .swiper-pagination {
+  top: auto;
+  left: 25%;
+  bottom: 0px;
+  width: 50%;
+}
+
+.box3 .swiper-button-next:after{
+  display: none;
+}
+.box3 .swiper-button-prev:after{
+  display: none;
+}
+.box3 .swiper-button-prev{
+ 
+  width: 40px ;
+  height: 40px ;
+  left: 35%;
+  top: 40%;
+  box-shadow:  -2px -2px 0px #00000010;
+  background: url("../img/swiper-button.svg")  center center / 40% no-repeat;
+  transform: rotate(180deg);
+  background-color: white;
+  border-radius: 100%;
+}
+.box3 .swiper-button-next{
+  
+  width: 40px ;
+  height: 40px ;
+  right: 35% ;
+  top: 40%;
+  background: url("../img/swiper-button.svg")  center center / 40% no-repeat;
+  box-shadow:  2px 2px 0px #00000010;
+  
+  background-color: white;
+  border-radius: 100%;
+}
+.box3 .swiper-pagination-progressbar .swiper-pagination-progressbar-fill{
+  background-color: black;
+}
+/* ----------------------------------------------box 3 end------------------------------------------------ */
+/* ----------------------------------------------box 4 start------------------------------------------------ */
+
+.box4{
+  width: 1500px;
+  margin: 150px auto;
+  position: relative;
+}
+.box4_swiper{
+  position: static;
+}
+.box4 h1{
+  font-size: 40px;
+  padding-bottom: 50px;
+}
+.box4_swiper .swiper-slide a figure{
+  width: 558px;
+  height: 314px;
+}
+.box4_swiper .swiper-slide a figure img{
+  width: 100%;
+  height: 100%;
+}
+
+.box4 .swiper-button-next:after{
+  display: none;
+}
+.box4 .swiper-button-prev:after{
+  display: none;
+}
+
+.box4 .swiper-button-prev{
+  left: auto;
+  right: 10%;
+  top: 20%;
+  background: url("../img/swiper-button.svg")  center center / 150% no-repeat;
+  transform: rotate(180deg);
+}
+.box4 .swiper-button-next{
+  right: 5% ;
+  top: 20%;
+  background: url("../img/swiper-button.svg")  center center / 150% no-repeat;
+}
+
+/* ----------------------------------------------box 4 end------------------------------------------------ */
+/* ----------------------------------------------box 5 start------------------------------------------------ */
+.box5{
+  width: 1500px;
+  margin: 150px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.box5 .box5_title h1{
+  font-size: 40px;
+}
+.box5 .box5_title a{
+  display: flex;
+}
+.box5 .box5_title a p{
+  margin-right: 10px;
+  color: #111111;
+  font-weight: bold;
+}
+
+.box5 .box5_title a figure{
+  width: 20px;
+  height: 20px;
+  background-color: #0082ff;
+  border-radius: 100%;
+}
+.box5 .box5_title a figure img{
+  filter: invert();
+}
+.box5 .box5_middlebox{
+  display: flex;
+}
+.box5 .box5_middlebox .box5_smallbox{ 
+  width: 340px;
+  height: 390px;
+  margin-right: 20px;
+}
+.box5_smallbox a p{
+  display: inline-block;
+  padding: 4px 8px;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  font-weight: bold;
+}
+.box5_smallbox a strong{
+  font-size: 20px;
+  display: block;
+  font-weight: bold;
+  letter-spacing : -1.8px;  /* 자간조정 */
+  margin: 12px 6px ;
+}
+.box5_smallbox a figure{
+  width: 340px;
+  height: 276px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.box5_smallbox a figure img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+/* ----------------------------------------------box 5 end------------------------------------------------ */
+/* ----------------------------------------------box 6 start------------------------------------------------ */
+.box6 {
+  width: 1500px;
+  
+  margin: 0 auto;
+  
+}
+.box6 h2{
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.box6 .box6_bigbox{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  
+}
+.box6 .box6_bigbox .box6_smallbox {
+  width: 466px;
+  height: 120px;
+  background-color: #f5f8fd;
+  border-radius: 20px;
+}
+.box6 .box6_bigbox .box6_smallbox strong {
+  display: block;
+  margin-top: 35px;
+  
+  font-size: 20px;
+}
+.box6 .box6_bigbox .box6_smallbox p{
+  margin-top: 5px;
+  color: #999999;
+}
+.box6 .box6_bigbox .box6_smallbox:hover {
+  box-shadow: 2px 2px 30px #00000040;
+}
+
+
+
+/* ----------------------------------------------box 6 end------------------------------------------------ */
+/* ----------------------------------------------box 7 start------------------------------------------------ */
+
+.box7 {
+  width: 1500px;
+  margin: 0 auto;
+  padding: 160px 0 ;
+}
+.box7 h2{
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 50px ;
+}
+.box7 .box7_bigbox{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.box7 .box7_bigbox .box7_smallbox a{
+  width: 272px;
+  height: 69px;
+  border: 1px solid #33333330;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.box7_smallbox{
+  margin-bottom: 80px;
+}
+.box7 .box7_bigbox .box7_smallbox:hover a {
+  border: 2px solid black;
+  box-shadow: 2px 2px 40px #00000040;
+}
+/* ----------------------------------------------box 7 end------------------------------------------------ */
+
+/* ----------------------------------------------footer start------------------------------------------------ */
+
+
+.footer_bgcolor{
+  width: 100%;
+  background-color: black;
+}
+.footer_bgcolor .footer_menu {
+  width: 1500px;
+  margin: 0 auto;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.footer_bgcolor .footer_menu .footer_a ul{
+  display: flex;
+  font-size: 16px;
+  margin-top: 12px;
+}
+.footer_bgcolor .footer_menu .footer_a ul li{
+  margin-right: 20px;
+}
+
+.footer_bgcolor .footer_menu .footer_b{
+  display: flex;
+  align-items:center ;
+  
+}
+.footer_bgcolor .footer_menu .footer_b figure{
+  margin-right: 20px;
+}
+.footer_bgcolor .footer_menu .footer_b input{
+ 
+  padding: 15px 5px;
+  border-radius: 30px;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+}
+
+.footer_last{
+  width: 1500px;
+  padding: 60px 30px;
+  margin: 0 auto;
+}
+.footer_last .footer_end2{
+  display: flex;
+  justify-content: space-between;
+}
+.footer_last .footer_end2 p{
+  color: #33333360;
+}
+.footer_end span{
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid #33333330;
+  font-size: 12px;
+}
+.footer_end p{
+  font-size: 12px;
+}
+
+#fixed2{
+  width: 100px;
+  height: 100px;
+  border: 2px solid #0082ff;
+  border-radius: 100%;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: white;
+  z-index: 50;
+}
+#fixed2 a{
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+#fixed2 a figure{
+  width: 32px;
+  height: 32px;
+  
+}
+#fixed2 a figure img{
+  width: 100%;
+  height: 100%;
+  
+}
+
+#fixed2 a p{
+  margin-top: 4px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #0082ff;
+  letter-spacing : -2px;
+}
+
+
